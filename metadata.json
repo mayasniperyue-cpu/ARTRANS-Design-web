@@ -1,0 +1,6 @@
+{
+  "name": "ARTRANS Media Partners",
+  "description": "An international media partnership platform structuring project-based collaborations across content, production, media technology, and commercialization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

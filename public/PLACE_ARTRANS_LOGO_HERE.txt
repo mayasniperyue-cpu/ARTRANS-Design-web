@@ -1,0 +1,1 @@
+Please place your official "ARTRANS-logo.png" image file inside this directory so the website loads and displays it in perfect high resolution!

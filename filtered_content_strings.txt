@@ -1,0 +1,1303 @@
+read from private field
+
+===
+
+Cannot add the same private member more than once
+
+===
+
+write to private field
+
+===
+
+object with keys {
+
+===
+
+). If you meant to render a collection of children, use an array instead.
+
+===
+
+act(...) is not supported in production builds of React.
+
+===
+
+React.Children.only expected to receive a single React element child.
+
+===
+
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+
+===
+
+Minified React error #
+
+===
+
+for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+
+===
+
+allowFullScreen async autoFocus autoPlay controls default defer disabled disablePictureInPicture disableRemotePlayback formNoValidate hidden loop noModule noValidate open playsInline readOnly required reversed scoped seamless itemScope
+
+===
+
+mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit
+
+===
+
+abort auxClick cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel
+
+===
+
+change click focusin focusout input keydown keyup selectionchange
+
+===
+
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+
+===
+
+compositionend focusout keydown keypress keyup mousedown
+
+===
+
+compositionstart focusout keydown keypress keyup mousedown
+
+===
+
+compositionupdate focusout keydown keypress keyup mousedown
+
+===
+
+abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting
+
+===
+
+cancel close invalid load scroll toggle
+
+===
+
+destructive group border-destructive bg-destructive text-destructive-foreground
+
+===
+
+${this.queryHash} data is undefined
+
+===
+
+Expected enabled to be a boolean or a callback that returns a boolean
+
+===
+
+experimental_prefetchInRender feature flag is not enabled
+
+===
+
+No QueryClient set, use QueryClientProvider to set one
+
+===
+
+rgba(99, 102, 241, 0.05)
+
+===
+
+A history only accepts one active listener
+
+===
+
+Absolute route path "
+
+===
+
+" nested under path
+
+===
+
+" is not valid. An absolute child route path
+
+===
+
+must start with the combined path of all its parent routes.
+
+===
+
+Index routes must not have child routes. Please remove
+
+===
+
+all child routes from route path "
+
+===
+
+" will be treated as if it were
+
+===
+
+" because the `*` character must
+
+===
+
+always follow a `/` in the pattern. To get rid of this warning,
+
+===
+
+please change the route path to "
+
+===
+
+" could not be decoded because it is is a malformed URL segment. This is probably due to a bad percent
+
+===
+
+React Router caught the following error during render
+
+===
+
+Can not rewrite read-only method '
+
+===
+
+target must be an object
+
+===
+
+visitor must be a function
+
+===
+
+Blob is not supported. Use a Buffer instead.
+
+===
+
+Circular reference detected in
+
+===
+
+data must be an object
+
+===
+
+header name must be a non-empty string
+
+===
+
+Object iterator must return a key-value pair
+
+===
+
+parser must be boolean|regexp|function
+
+===
+
+Request failed with status code
+
+===
+
+timeout ${e} of ms exceeded
+
+===
+
+Response type '${S}' is not supported
+
+===
+
+is not supported by the environment
+
+===
+
+is not available in the build
+
+===
+
+as no adapter specified
+
+===
+
+There is no suitable adapter to dispatch the request
+
+===
+
+] Transitional option '
+
+===
+
+has been deprecated since v
+
+===
+
+and will be removed in the near future
+
+===
+
+${i} is likely a misspelling of ${e}
+
+===
+
+options must be an object
+
+===
+
+executor must be a function.
+
+===
+
+Random bytes length must be >= 16
+
+===
+
+[Base44 SDK] Realtime broadcast for ${r}#${v.id} was oversize and got slimmed for transport. Fields >10 KB are empty and the rest of the record may be a stub. Call \`entities.${r}.get("${v.id}")\` to fetch the full record.
+
+===
+
+Integration slug is required and cannot be empty
+
+===
+
+Operation ID is required and cannot be empty
+
+===
+
+Login method can only be used in a browser environment
+
+===
+
+Integration type is required and must be a string
+
+===
+
+Connector ID is required and must be a string
+
+===
+
+transport closed by the server
+
+===
+
+got plaintext data when reconstructing a packet
+
+===
+
+got binary data when not reconstructing a packet
+
+===
+
+" is a reserved event name
+
+===
+
+operation has timed out
+
+===
+
+socket has been disconnected
+
+===
+
+Service token is required to use asServiceRole. Please provide a serviceToken when creating the client.
+
+===
+
+User not registered for this app
+
+===
+
+Failed to load app
+
+===
+
+An unexpected error occurred
+
+===
+
+useAuth must be used within an AuthProvider
+
+===
+
+cubic-bezier(${t}, ${e}, ${r}, ${i})
+
+===
+
+preserve-aspect
+
+===
+
+max-w-7xl mx-auto px-6 flex items-center justify-between
+
+===
+
+font-display font-bold text-xl tracking-widest text-gold uppercase
+
+===
+
+font-display font-light text-[10px] tracking-[0.3em] text-silver/60 uppercase
+
+===
+
+fixed inset-x-0 top-0 z-40 bg-navy/98 backdrop-blur-xl pt-24 pb-10 px-8 border-b border-gold/10
+
+===
+
+relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden noise
+
+===
+
+w-full h-full object-cover animate-pan opacity-30
+
+===
+
+absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/70 to-navy
+
+===
+
+absolute inset-0 grid-bg z-0 opacity-40
+
+===
+
+absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full z-0 pointer-events-none
+
+===
+
+radial-gradient(ellipse, rgba(201,151,90,0.06) 0%, rgba(11,18,32,0) 70%)
+
+===
+
+absolute inset-0 z-0 overflow-hidden pointer-events-none
+
+===
+
+absolute top-0 h-full w-px
+
+===
+
+linear-gradient(to bottom, transparent, rgba(201,151,90,0.04) 30%, rgba(201,151,90,0.08) 60%, transparent)
+
+===
+
+relative z-10 text-center px-6 max-w-6xl mx-auto
+
+===
+
+flex items-center justify-center gap-3 mb-10
+
+===
+
+font-ui text-[11px] tracking-[0.35em] uppercase text-gold/80
+
+===
+
+The 23°26′ Transformation Vision
+
+===
+
+font-display font-bold text-[clamp(3rem,10vw,8rem)] leading-none tracking-tight uppercase text-white mb-2
+
+===
+
+font-display font-light text-[clamp(2rem,7vw,5.5rem)] leading-none tracking-[0.12em] uppercase text-gold mb-10
+
+===
+
+w-32 h-px bg-gold/40 mx-auto mb-10
+
+===
+
+absolute bottom-10 left-8 font-ui text-[10px] tracking-[0.2em] uppercase text-dim flex items-center gap-2
+
+===
+
+w-1.5 h-1.5 rounded-full bg-gold animate-pulse
+
+===
+
+absolute bottom-10 right-1/2 translate-x-1/2 flex flex-col items-center gap-2
+
+===
+
+w-6 h-10 border border-white/20 rounded-full flex items-start justify-center pt-1.5
+
+===
+
+w-1 h-2 bg-gold rounded-full scroll-dot
+
+===
+
+absolute inset-0 bg-navy-mid z-0
+
+===
+
+absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold/20 to-transparent
+
+===
+
+relative z-10 max-w-7xl mx-auto px-6
+
+===
+
+reveal flex items-center gap-4 mb-16
+
+===
+
+font-ui text-[10px] tracking-[0.3em] uppercase text-gold/70
+
+===
+
+reveal font-display font-bold text-[clamp(2.5rem,5vw,5rem)] leading-none uppercase text-white mb-10
+
+===
+
+reveal font-body text-lg text-silver/50 italic leading-relaxed mb-8
+
+===
+
+Structuring project-based collaborations across content, production, media technology, digital platforms and commercialization.
+
+===
+
+reveal glass p-8 border-l-2 border-gold/40
+
+===
+
+is an international media partnership platform that structures project-based collaborations across content, production, media technology digital platforms and commercialization.
+
+===
+
+helps clients structure project-based partnerships by assembling the right combination of strategic, creative, technological and operational partners for future-facing media opportunities.
+
+===
+
+reveal grid grid-cols-3 gap-4 pt-4
+
+===
+
+text-center border border-gold/10 p-4
+
+===
+
+font-display font-bold text-3xl text-gold
+
+===
+
+font-ui text-[10px] tracking-widest uppercase text-dim mt-1
+
+===
+
+Project positioning / Business model / Capability mapping
+
+===
+
+Content & IP Developers
+
+===
+
+Original IP / Format development / Archive repackaging
+
+===
+
+Film / TV / Short-form / Digital & branded content
+
+===
+
+Studio Technology & Systems Integrators
+
+===
+
+Studio planning / Broadcast systems / AV integration
+
+===
+
+Virtual Production & AI Media Specialists
+
+===
+
+LED volume / XR production / AI-assisted creation
+
+===
+
+Post-Production & Restoration Houses
+
+===
+
+Editing / VFX / AI restoration / Localization
+
+===
+
+Digital Platform & App Architects
+
+===
+
+OTT / App / CMS / Audience engagement
+
+===
+
+Commercialization & IP Operators
+
+===
+
+Distribution / Licensing / Brand partnerships
+
+===
+
+absolute inset-0 bg-navy z-0
+
+===
+
+absolute inset-0 grid-bg z-0 opacity-30
+
+===
+
+reveal font-display font-bold text-[clamp(2rem,4.5vw,4.5rem)] leading-none uppercase text-white mb-6
+
+===
+
+reveal font-body text-base text-silver/60 leading-relaxed mb-10 max-w-md
+
+===
+
+Clients work through one clear interface with
+
+===
+
+. Behind it, ARTRANS curates and coordinates specialized partners across the media value chain according to each project's objectives.
+
+===
+
+reveal relative flex items-center gap-6 mt-10
+
+===
+
+flex flex-col items-center gap-2
+
+===
+
+w-16 h-16 rounded-full border-2 border-white/30 flex items-center justify-center
+
+===
+
+font-display font-bold text-xs text-white tracking-widest
+
+===
+
+flex flex-col items-center gap-1 text-gold/60
+
+===
+
+font-ui text-[9px] tracking-widest uppercase text-gold/50
+
+===
+
+w-20 h-20 rounded-full bg-gold/15 border border-gold/40 flex flex-col items-center justify-center text-center gold-glow
+
+===
+
+font-display font-bold text-[10px] tracking-widest text-gold leading-tight
+
+===
+
+font-display text-[8px] tracking-widest text-gold/60
+
+===
+
+font-body text-xs text-dim leading-relaxed
+
+===
+
+Strategy & Project Structuring
+
+===
+
+Defining project objectives, operating model, required capabilities, partnership models and development roadmaps.
+
+===
+
+Content & IP Activation
+
+===
+
+Developing, repackaging and activating content assets and IP across formats, platforms and audiences.
+
+===
+
+Production & Media Technology
+
+===
+
+Organizing studio infrastructure, production systems, media technology and workflow partners into a practical production ecosystem.
+
+===
+
+Commercialization & Platform Operation
+
+===
+
+Designing platform operation and commercial pathways through content distribution, audience engagement, licensing, brand partnerships and monetization models.
+
+===
+
+font-display font-bold text-[clamp(2rem,4.5vw,4.5rem)] leading-none uppercase text-white mb-4
+
+===
+
+font-body text-base text-silver/50 italic max-w-xl
+
+===
+
+Four capability pillars that turn ecosystem resources into practical media solutions.
+
+===
+
+font-body text-sm text-silver/50 leading-relaxed mb-6
+
+===
+
+font-ui text-[10px] tracking-widest uppercase text-gold/50 mb-3
+
+===
+
+font-display font-semibold text-sm text-silver/70
+
+===
+
+TIMEAXIS DIGITAL IMAGING TECHNOLOGY
+
+===
+
+Virtual Production / Advanced Post-Production
+
+===
+
+A specialist partner supporting virtual production studio solutions, LED stage integration, digital asset creation, cinematic VFX, AIGC-assisted visual production and advanced post-production workflows.
+
+===
+
+LED & XR integration
+
+===
+
+Sony Crystal LED technology
+
+===
+
+300+ film and television works supported with comprehensive digital solutions.
+
+===
+
+Asia-scale / China-leading virtual production ecosystem with advanced LED technology across 15,000㎡.
+
+===
+
+Deep technology collaboration with Sony on Crystal LED Display System.
+
+===
+
+The Wandering Earth 2 — visual effects contributor.
+
+===
+
+Born to Fly — China's first military film utilizing LED virtual production.
+
+===
+
+China's first AI sci-fi short drama preview with China Unicom.
+
+===
+
+AI Media & Audio-Video Innovation Lab
+
+===
+
+An audio-video R&D and innovation partner supporting AI media production, audio-video infrastructure, content localization, restoration, immersive media and full-chain audio-video technologies.
+
+===
+
+AI video translation & dubbing
+
+===
+
+AI subtitling & synchronization
+
+===
+
+AI restoration & enhancement
+
+===
+
+AIGC film & TV production
+
+===
+
+AUDIO Vivid & HDR Vivid
+
+===
+
+Core R&D engine within China V Valley — Malanshan Video Cultural & Creative Industrial Park.
+
+===
+
+Government-backed institution jointly established by Hunan Province and Changsha City.
+
+===
+
+CEIC 2025 showcase — 13 proprietary technologies across intelligent audio-visual production.
+
+===
+
+Micro-drama globalization support with AI translation and localization capabilities.
+
+===
+
+Next-generation immersive media applications for virtual studios, XR filming, cultural tourism.
+
+===
+
+NDT GROUP / NEW DIGITAL TECHNOLOGY HOLDINGS LTD.
+
+===
+
+Studio Technology & Systems Integrator
+
+===
+
+A professional studio technology and broadcast systems integration partner supporting studio planning, AV system integration, broadcast workflow, master control, transmission, distribution and technical operation infrastructure.
+
+===
+
+China Media Group / CCTV New-Site E14, E15, E17 Studio Cluster — audio system upgrade.
+
+===
+
+CCTV / 800㎡ 4K Studio — 4K studio audio system integration and upgrade.
+
+===
+
+Zhejiang Radio & TV / 32-Channel 4K-IP OB Van — Sony & Evertz collaboration.
+
+===
+
+Tianjin TV / 13th National Games IBC Signal Dispatch Center.
+
+===
+
+Zhejiang Radio & TV / International Film & TV Center IP Master Control Project.
+
+===
+
+Media Asset & Broadcast Workflow Systems Partner
+
+===
+
+A media technology and broadcast workflow systems partner supporting media asset management, integrated production, ultra-HD editing, broadcast playout and multi-platform distribution.
+
+===
+
+China Media Group / Integrated Media Resource Library — long-term CMG platform since 2003.
+
+===
+
+CCTV / New-Site Media Asset Management System — ingest and management of all broadcast materials.
+
+===
+
+China Media Group / 8K Ultra-HD TV Channel — customized 8K broadcast control system.
+
+===
+
+Beijing Radio & Television / 8K Ultra-HD Upgrade.
+
+===
+
+Peking University / All-Media Studio Center.
+
+===
+
+Media Cloud & Converged Workflow Partner
+
+===
+
+A media technology and integrated broadcast workflow partner supporting media cloud, converged newsroom, content management, ultra-HD production, multi-platform publishing and professional media system integration.
+
+===
+
+China Media Group / CCTV & CGTN — converged media platform and professional workflow.
+
+===
+
+Zhejiang Radio & TV / China Blue Cloud — supporting 50+ city and county broadcasters.
+
+===
+
+CCTV News / COVID-19 Live Coverage — 24-hour livestreaming with zero-error transmission.
+
+===
+
+International Media Clients — solutions adopted by 200+ institutions across 30+ countries.
+
+===
+
+Short Drama Content & Commercialization Partner
+
+===
+
+A short drama content and commercialization partner with a national production and distribution network. Supports the full short drama value chain from IP development to commercial monetization.
+
+===
+
+Jingzhou Media Group / Short Drama Ecosystem — 100-150 live-action dramas annually.
+
+===
+
+ByteDance strategic cooperation & multi-platform distribution.
+
+===
+
+Duxiaoman brand short drama — 150M+ views within one month.
+
+===
+
+Roewe brand short drama — 100M+ views with performance-driven distribution.
+
+===
+
+Immersive Experience & Digital Culture Partner
+
+===
+
+An immersive experience and spatial computing partner supporting LBE experiences, XR interaction, virtual production, multimedia content, digital heritage and turnkey immersive solutions.
+
+===
+
+Digital Jingdezhen — World Heritage digital project; AR/VR/MR experience matrix.
+
+===
+
+Chengdu FISU World University Games Closing Ceremony 2023.
+
+===
+
+Shanghai F1 Auto Culture Festival 2024/2025.
+
+===
+
+PUBG Mobile × Transformers CG Cinematic collaboration.
+
+===
+
+Premium Film, IP & AI Content Partner
+
+===
+
+A premium film and IP content partner supporting film investment, production, director-led content development, theatrical release, online distribution, curated streaming and AI-powered entertainment content.
+
+===
+
+Film investment & production
+
+===
+
+Premium Chinese Film Portfolio — accumulated box office over RMB 9.3B.
+
+===
+
+Full River Red — RMB 4.544B box office.
+
+===
+
+Director Network — Ning Hao, Xu Zheng, Zhang Yimou, Peter Chan, Wong Kar-wai.
+
+===
+
+AI Content Cooperation with Phancy covering AI film production and interactive entertainment.
+
+===
+
+absolute inset-0 bg-navy/95 backdrop-blur-xl
+
+===
+
+relative z-10 w-full max-w-3xl glass border border-gold/20 max-h-[90vh] overflow-y-auto
+
+===
+
+flex items-start justify-between mb-8
+
+===
+
+inline-block font-ui text-[10px] tracking-widest uppercase border border-gold/40 text-gold/80 px-3 py-1 mb-4
+
+===
+
+grid grid-cols-3 gap-2 mb-8
+
+===
+
+relative h-28 overflow-hidden border border-white/5
+
+===
+
+absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent
+
+===
+
+font-body text-sm text-silver/70 leading-relaxed mb-8
+
+===
+
+font-ui text-[10px] uppercase tracking-wider border border-white/10 text-silver/60 px-2 py-1
+
+===
+
+Representative Experience
+
+===
+
+w-1 h-1 rounded-full bg-gold/50 mt-2 flex-shrink-0
+
+===
+
+font-body text-sm text-silver/70 leading-relaxed
+
+===
+
+Representative Strategic Partner Profiles
+
+===
+
+SPECIALIST PARTNERS
+
+===
+
+relative h-40 w-full overflow-hidden flex-shrink-0
+
+===
+
+absolute inset-0 bg-gradient-to-t from-navy-mid via-navy-mid/40 to-transparent
+
+===
+
+font-ui text-[9px] tracking-widest uppercase bg-gold/20 border border-gold/30 text-gold/80 px-2 py-0.5
+
+===
+
+p-5 flex flex-col gap-3 flex-1
+
+===
+
+font-body text-xs text-gold/60 italic
+
+===
+
+font-ui text-[10px] uppercase tracking-widest
+
+===
+
+Clarify ambition, context, business logic and expected outcome.
+
+===
+
+Identify strategic, creative, technical, operational and commercial needs.
+
+===
+
+Curate the Partner Mix
+
+===
+
+Select the right partners based on scope, complexity and long-term potential.
+
+===
+
+Structure the Collaboration Model
+
+===
+
+Define roles, responsibilities, communication flow and roadmap.
+
+===
+
+Advance to Proposal & Planning
+
+===
+
+Coordinate partner input, commercial discussion and execution planning.
+
+===
+
+How We Build the Right Consortium
+
+===
+
+reveal font-body text-base text-silver/60 italic leading-relaxed max-w-md
+
+===
+
+Each project requires a different combination of expertise.
+
+===
+
+helps define the right partner structure based on the project's real ambition, required capabilities and commercial direction.
+
+===
+
+relative flex items-start gap-5 group
+
+===
+
+absolute left-5 top-10 bottom-0 w-px bg-gold/15
+
+===
+
+font-display font-bold text-sm text-gold
+
+===
+
+flex items-center gap-3 mb-1
+
+===
+
+font-ui text-[10px] tracking-widest uppercase bg-gold/15 text-gold px-2.5 py-1 border border-gold/20
+
+===
+
+font-body text-sm text-dim leading-relaxed
+
+===
+
+Future Studio & Production Hubs
+
+===
+
+Digital Platforms & App Monetization
+
+===
+
+IP & Entertainment Extensions
+
+===
+
+Immersive experiences
+
+===
+
+font-body text-base text-silver/50 italic max-w-2xl
+
+===
+
+ARTRANS can structure different partner combinations for future-facing media projects — from studio development and content activation to digital platforms, IP commercialization and entertainment extensions.
+
+===
+
+absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy/40
+
+===
+
+relative z-10 p-8 min-h-[240px] flex flex-col justify-between
+
+===
+
+inline-block font-ui text-[10px] tracking-widest uppercase border border-gold/30 text-gold/70 px-3 py-1 mb-4
+
+===
+
+font-display font-bold text-2xl uppercase text-white leading-tight mb-4
+
+===
+
+contact@artrans.hk
+
+===
+
+New Enquiry from ${e.name} — ${e.company}
+
+===
+
+Name: ${e.name}
+Company: ${e.company}
+Email: ${e.email}
+Area of Interest: ${e.interest}
+
+Message:
+${e.message}
+
+===
+
+absolute inset-0 grid-bg z-0 opacity-50
+
+===
+
+absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none z-0
+
+===
+
+radial-gradient(ellipse, rgba(201,151,90,0.08) 0%, transparent 70%)
+
+===
+
+reveal font-display font-bold text-[clamp(2.5rem,5vw,5rem)] leading-none uppercase text-white mb-8
+
+===
+
+reveal font-body text-base text-silver/60 leading-relaxed mb-12 max-w-md
+
+===
+
+Every future-facing media project starts with a conversation. Tell us about your ambition and we'll help define the right partner structure.
+
+===
+
+w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0
+
+===
+
+font-ui text-xs font-semibold text-silver/70 mb-0.5
+
+===
+
+mailto:contact@artrans.hk
+
+===
+
+flex flex-col items-center justify-center h-full min-h-[400px] text-center
+
+===
+
+w-16 h-16 border border-gold/40 rounded-full flex items-center justify-center mb-6 gold-glow
+
+===
+
+font-display font-bold text-2xl text-white uppercase mb-3
+
+===
+
+We'll be in touch soon to discuss your project.
+
+===
+
+font-display font-bold text-xl text-white uppercase tracking-wide mb-6
+
+===
+
+font-ui text-[10px] tracking-widest uppercase text-dim block mb-2
+
+===
+
+Describe your project ambition…
+
+===
+
+relative bg-navy border-t border-gold/10 py-12 px-6 noise
+
+===
+
+font-display font-bold text-2xl tracking-widest text-gold uppercase mb-1
+
+===
+
+font-display font-light text-[11px] tracking-[0.35em] text-silver/50 uppercase
+
+===
+
+font-body text-xs text-dim italic mt-2
+
+===
+
+flex flex-wrap gap-x-8 gap-y-3
+
+===
+
+font-ui text-[10px] tracking-widest uppercase text-dim
+
+===
+
+ARTRANS Media Partners. Hong Kong.
+
+===
+
+font-ui text-[10px] tracking-widest uppercase text-dim italic
+
+===
+
+w-1.5 h-1.5 rounded-full bg-gold/60 animate-pulse
+
+===
+
+fixed pointer-events-none z-[9999] rounded-full transition-all duration-200
+
+===
+
+radial-gradient(circle, rgba(201,151,90,0.06) 0%, transparent 65%)
+
+===
+
+min-h-screen flex items-center justify-center p-6 bg-slate-50
+
+===
+
+h-0.5 w-16 bg-slate-200 mx-auto
+
+===
+
+could not be found in this application.
+
+===
+
+mt-8 p-4 bg-slate-100 rounded-lg border border-slate-200
+
+===
+
+flex-shrink-0 w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center mt-0.5
+
+===
+
+w-2 h-2 rounded-full bg-orange-400
+
+===
+
+This could mean that the AI hasn't implemented this page yet. Ask it to implement it in the chat.
+
+===
+
+flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-white to-slate-50
+
+===
+
+max-w-md w-full p-8 bg-white rounded-lg shadow-lg border border-slate-100
+
+===
+
+inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-orange-100
+
+===
+
+text-3xl font-bold text-slate-900 mb-4
+
+===
+
+You are not registered to use this application. Please contact the app administrator to request access.
+
+===
+
+p-4 bg-slate-50 rounded-md text-sm text-slate-600
+
+===
+
+list-disc list-inside mt-2 space-y-1
+
+===
+
+Verify you are logged in with the correct account
+
+===
+
+Contact the app administrator for access
+
+===
+
+Try logging out and back in again
+
+===
+
+fixed inset-0 flex items-center justify-center
+
+===
+
+w-8 h-8 border-4 border-slate-200 border-t-slate-800 rounded-full animate-spin
