@@ -42,7 +42,7 @@ export default function Header() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center text-left"
           >
-            <ArtransLogo className="h-10 md:h-12 w-auto max-w-[210px] transition-all duration-300" />
+            <ArtransLogo className="h-6 md:h-7 w-auto transition-all duration-300" />
           </button>
 
           <div className="hidden lg:flex items-center gap-8">

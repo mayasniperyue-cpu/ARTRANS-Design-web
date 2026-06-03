@@ -1,4 +1,6 @@
 import { NavElement, Advisor, Pillar, Partner, ConsortiumStep, Scenario } from "./types";
+import partner5Img from "./assets/images/regenerated_image_1780462377858.avif";
+import partner3Img from "./assets/images/regenerated_image_1780418402015.jpg";
 
 export const NAV_ELEMENTS: NavElement[] = [
   { label: "Who We Are", href: "#who-we-are" },
@@ -55,11 +57,11 @@ export const PARTNERS: Partner[] = [
     id: "timeaxis",
     name: "TIMEAXIS DIGITAL IMAGING TECHNOLOGY",
     role: "Virtual Production / Advanced Post-Production",
-    thumb: "https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/regenerated_image_1780418399662.jpg",
     images: [
-      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/regenerated_image_1780418713710.jpg",
+      "src/assets/images/regenerated_image_1780418715388.jpg",
+      "src/assets/images/regenerated_image_1780418931870.jpg"
     ],
     desc: "A specialist partner supporting virtual production studio solutions, LED stage integration, digital asset creation, cinematic VFX, AIGC-assisted visual production and advanced post-production workflows.",
     expertise: [
@@ -84,11 +86,11 @@ export const PARTNERS: Partner[] = [
     id: "malanshan",
     name: "MALANSHAN AUDIO-VIDEO LABORATORY",
     role: "AI Media & Audio-Video Innovation Lab",
-    thumb: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/regenerated_image_1780418400987.png",
     images: [
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/regenerated_image_1780419660927.jpg",
+      "src/assets/images/regenerated_image_1780419662074.jpg",
+      "src/assets/images/regenerated_image_1780419662898.jpg"
     ],
     desc: "An audio-video R&D and innovation partner supporting AI media production, audio-video infrastructure, content localization, restoration, immersive media and full-chain audio-video technologies.",
     expertise: [
@@ -110,41 +112,46 @@ export const PARTNERS: Partner[] = [
   },
   {
     id: "ndt",
-    name: "NDT GROUP / NEW DIGITAL TECHNOLOGY HOLDINGS LTD.",
-    role: "Studio Technology & Systems Integrator",
-    thumb: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop",
+    name: "DADA + ISM STUDIO",
+    role: "Event Creative & Experience Strategy Partner",
+    thumb: partner3Img,
     images: [
-      "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop"
+     "src/assets/images/003-Interior-Pages01.jpg",
+      "src/assets/images/003-Interior-Pages02.jpg",
+      "src/assets/images/003-Interior-Pages03.jpg"
     ],
-    desc: "A professional studio technology and broadcast systems integration partner supporting studio planning, AV system integration, broadcast workflow, master control, transmission, distribution and technical operation infrastructure.",
+    desc: "A cross-border event creative and experience strategy partner connecting selected Chinese creative capabilities with cultural, entertainment, sports, media and brand opportunities across Saudi Arabia and the wider Middle East.",
     expertise: [
-      "Studio AV systems",
-      "Broadcast workflow",
-      "Master control",
-      "Transmission & distribution",
-      "OB vans",
-      "4K-IP infrastructure",
-      "Core equipment integration"
-    ],
-    highlights: [
-      "China Media Group / CCTV New-Site E14, E15, E17 Studio Cluster — audio system upgrade.",
-      "CCTV / 800㎡ 4K Studio — 4K studio audio system integration and upgrade.",
-      "Zhejiang Radio & TV / 32-Channel 4K-IP OB Van — Sony & Evertz collaboration.",
-      "Tianjin TV / 13th National Games IBC Signal Dispatch Center.",
-      "Zhejiang Radio & TV / International Film & TV Center IP Master Control Project."
+     "Event creative strategy",
+     "Concept development",
+     "Creative direction",
+     "Stadium ceremonies",
+     "Brand launches",
+     "Immersive cultural experiences",
+     "Multimedia storytelling",
+     "Sports & esports entertainment",
+     "Sponsorship activation",
+     "Partner curation"
+     ],
+     highlights: [
+     "Spanish Super Cup 2025, Jeddah — stadium ceremony and entertainment delivery support.",
+     "AFC Asian Cup Saudi Arabia 2027 — final-round shortlisted opening and closing ceremony proposal.",
+     "Prince Badr Immersive Museum Experience — approved immersive cultural experience concept.",
+     "CEER Automotive Launch 2026 — shortlisted brand launch concept and content design.",
+     "Esports World Cup 2026 Opening Ceremony — final-round shortlisted ceremony proposal.",
+     "WTA Riyadh 2025 × ERKE — sponsorship secured and activation strategy support.",
+     "Core Creative Network — selected partners across brand experience, ceremonies, esports, immersive media, AI content and sports marketing."
     ]
   },
   {
     id: "dayang",
     name: "DAYANG TECHNOLOGY",
     role: "Media Asset & Broadcast Workflow Systems Partner",
-    thumb: "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/regenerated_image_1780418402908.jpg",
     images: [
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+     "src/assets/images/004-Interior-Pages01.avif",
+     "src/assets/images/004-Interior-Pages02.jpg",
+     "src/assets/images/004-Interior-Pages03.jpg"
     ],
     desc: "A media technology and broadcast workflow systems partner supporting media asset management, integrated production, ultra-HD editing, broadcast playout and multi-platform distribution.",
     expertise: [
@@ -167,11 +174,11 @@ export const PARTNERS: Partner[] = [
     id: "sobey",
     name: "SOBEY DIGITAL TECHNOLOGY",
     role: "Media Cloud & Converged Workflow Partner",
-    thumb: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/Main-Image05.avif",
     images: [
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1567593810070-7a3d471af022?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/005-Interior-Pages01.jpg",
+      "src/assets/images/005-Interior-Pages02.jpg",
+      "src/assets/images/005-Interior-Pages03.jpg"
     ],
     desc: "A media technology and integrated broadcast workflow partner supporting media cloud, converged newsroom, content management, ultra-HD production, multi-platform publishing and professional media system integration.",
     expertise: [
@@ -195,11 +202,11 @@ export const PARTNERS: Partner[] = [
     id: "songguo",
     name: "SONGGUO DIGITAL CULTURE",
     role: "Short Drama Content & Commercialization Partner",
-    thumb: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/Main-Image06.avif",
     images: [
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/006-Interior-Pages01.avif",
+      "src/assets/images/006-Interior-Pages02.jpg",
+      "src/assets/images/006-Interior-Pages03.avif"
     ],
     desc: "A short drama content and commercialization partner with a national production and distribution network. Supports the full short drama value chain from IP development to commercial monetization.",
     expertise: [
@@ -223,11 +230,11 @@ export const PARTNERS: Partner[] = [
     id: "utour",
     name: "UTOUR DIGITAL CULTURE",
     role: "Immersive Experience & Digital Culture Partner",
-    thumb: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/Main-Image07.avif",
     images: [
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1561736778-92e52a7769ef?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/007-Interior-Pages01.jpg",
+      "src/assets/images/007-Interior-Pages02.jpg",
+      "src/assets/images/007-Interior-Pages03.jpg"
     ],
     desc: "An immersive experience and spatial computing partner supporting LBE experiences, XR interaction, virtual production, multimedia content, digital heritage and turnkey immersive solutions.",
     expertise: [
@@ -251,11 +258,11 @@ export const PARTNERS: Partner[] = [
     id: "huanxi",
     name: "HUANXI MEDIA GROUP",
     role: "Premium Film, IP & AI Content Partner",
-    thumb: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
+    thumb: "src/assets/images/Main-Image08.avif",
     images: [
-      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=800&auto=format&fit=crop"
+      "src/assets/images/008-Interior-Pages01.avif",
+      "src/assets/images/008-Interior-Pages02.jpg",
+      "src/assets/images/008-Interior-Pages03.jpg"
     ],
     desc: "A premium film and IP content partner supporting film investment, production, director-led content development, theatrical release, online distribution, curated streaming and AI-powered entertainment content.",
     expertise: [

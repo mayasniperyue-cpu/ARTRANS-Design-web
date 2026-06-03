@@ -56,13 +56,13 @@ export function PartnerModal({ partner, onClose }: PartnerModalProps) {
           {partner.images && partner.images.length > 0 && (
             <div className="grid grid-cols-3 gap-2 mb-8">
               {partner.images.map((img, idx) => (
-                <div key={idx} className="relative h-28 overflow-hidden border border-white/5">
+                <div key={idx} className="relative h-28 overflow-hidden border border-gold/10 group/img">
                   <img
                     src={img}
                     alt=""
-                    className="w-full h-full object-cover saturate-0 hover:saturate-100 opacity-60 hover:opacity-90 transition-all duration-400"
+                    className="w-full h-full object-cover saturate-[0.85] hover:saturate-100 opacity-85 hover:opacity-100 scale-100 hover:scale-105 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent pointer-events-none" />
                 </div>
               ))}
             </div>
@@ -140,7 +140,7 @@ export default function StrategicPartners() {
 
           {/* Section Heading */}
           <div className="reveal mb-14">
-            <h2 className="font-display font-black text-[clamp(2.2rem,5vw,5rem)] leading-[0.85] tracking-normal uppercase text-white mb-4">
+            <h2 className={`font-display font-black text-[clamp(2.2rem,5vw,5rem)] tracking-normal uppercase text-white mb-4 ${language === "EN" ? "leading-[0.85]" : "leading-[1.15]"}`}>
               {language === "EN" ? (
                 <>
                   SPECIALIST PARTNERS
@@ -178,11 +178,6 @@ export default function StrategicPartners() {
                     className="w-full h-full object-cover saturate-0 group-hover:saturate-50 opacity-50 group-hover:opacity-70 transition-all duration-500 scale-105 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-mid via-navy-mid/40 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="font-ui text-[9px] tracking-widest uppercase bg-gold/20 border border-gold/30 text-gold/80 px-2 py-0.5">
-                      {t("partners.tag")}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Info block */}

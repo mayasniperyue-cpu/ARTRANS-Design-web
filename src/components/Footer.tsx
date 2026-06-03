@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-10 border-b border-white/5">
           {/* Logo block */}
           <div>
-            <ArtransLogo className="h-14 w-auto max-w-[200px]" />
+            <ArtransLogo className="h-8 md:h-9 w-auto" />
           </div>
 
           {/* Quick link navigation items */}

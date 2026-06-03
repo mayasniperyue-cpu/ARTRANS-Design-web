@@ -6,7 +6,7 @@ interface ArtransLogoProps {
   fallbackSizeClass?: string;
 }
 
-export function ArtransLogo({ className = "h-10 md:h-12", fallbackSizeClass = "text-2xl" }: ArtransLogoProps) {
+export function ArtransLogo({ className = "h-6 md:h-7", fallbackSizeClass = "text-xl" }: ArtransLogoProps) {
   const { t } = useLanguage();
   const [isImgError, setIsImgError] = useState(false);
 

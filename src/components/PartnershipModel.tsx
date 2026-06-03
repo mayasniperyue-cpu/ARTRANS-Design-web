@@ -28,7 +28,7 @@ export default function PartnershipModel() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column: Heading and Connector Diagram */}
           <div className="lg:sticky lg:top-32">
-            <h2 className="reveal font-display font-black text-[clamp(2rem,4.5vw,4.5rem)] leading-[0.85] tracking-normal uppercase text-white mb-6">
+            <h2 className={`reveal font-display font-black text-[clamp(2rem,4.5vw,4.5rem)] tracking-normal uppercase text-white mb-6 ${language === "EN" ? "leading-[0.85]" : "leading-[1.15]"}`}>
               {language === "EN" ? (
                 <>
                   ONE INTERFACE.

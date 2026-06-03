@@ -5,12 +5,6 @@ export default function WhoWeAre() {
   const containerRef = useScrollReveal(0.12);
   const { t, language } = useLanguage();
 
-  const stats = [
-    { value: "4", label: t("who.stats.pillars") },
-    { value: "7+", label: t("who.stats.partners") },
-    { value: "HK", label: t("who.stats.based") }
-  ];
-
   return (
     <section
       id="who-we-are"
@@ -31,10 +25,10 @@ export default function WhoWeAre() {
         </div>
 
         {/* Content grid */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Left Column */}
-          <div>
-            <h2 className="reveal font-display font-black text-[clamp(2.5rem,5vw,5rem)] leading-[0.95] tracking-normal uppercase text-white mb-10">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column - Sticky Title & Quote */}
+          <div className="lg:col-span-5 lg:sticky lg:top-36">
+            <h2 className={`reveal font-display font-black text-[clamp(2.5rem,4.5vw,4rem)] tracking-tight uppercase text-white mb-6 ${language === "EN" ? "leading-[1.0]" : "leading-[1.15]"}`}>
               {language === "EN" ? (
                 <>
                   AN INTERNATIONAL
@@ -53,28 +47,29 @@ export default function WhoWeAre() {
                 </>
               )}
             </h2>
-            <p className="reveal font-body text-base text-silver/50 italic leading-relaxed mb-8">
+            <div className="h-[2px] w-12 bg-gold/40 my-6 reveal" />
+            <p className="reveal font-body text-base text-silver/40 italic leading-relaxed">
               {t("who.italic")}
             </p>
           </div>
 
-          {/* Right Column */}
-          <div className="space-y-8">
-            <div className="reveal glass p-8 border-l-2 border-gold/40">
-              <p className="font-body text-silver/80 text-sm md:text-base leading-relaxed">
+          {/* Right Column - Deep Partnership details */}
+          <div className="lg:col-span-7 space-y-6">
+            <div className="reveal glass p-8 md:p-10 border-l-2 border-gold/40 hover:border-gold/60 transition-all duration-300">
+              <p className="font-body text-silver/90 text-sm md:text-base leading-relaxed">
                 {language === "EN" ? (
                   <>
                     <span className="text-gold font-semibold font-sans">ARTRANS Media Partners</span> is an international media partnership platform that structures project-based collaborations across content, production, media technology digital platforms and commercialization.
                   </>
                 ) : (
                   <>
-                    <span className="text-gold font-semibold font-sans">ARTRANS 媒體合夥人</span> 是一個國際性的媒體戰略合作平台，專注於圍繞優質內容、影棚製作、媒體科技、數字平台以及商業化運作，構建起以項目為核心的跨界協作體系。
+                    <span className="text-gold font-semibold font-sans">ARTRANS Media Partners</span> 是一個國際性的媒體戰略合作平台，專注於圍繞優質內容、影棚製作、媒體科技、數字平台以及商業化運作，構建起以項目為核心的跨界協作體系。
                   </>
                 )}
               </p>
             </div>
 
-            <div className="reveal glass p-8">
+            <div className="reveal glass p-8 md:p-10 border-l border-gold/15 hover:border-gold/35 transition-all duration-300">
               <p className="font-body text-silver/70 text-sm leading-relaxed">
                 {language === "EN" ? (
                   <>
@@ -86,18 +81,6 @@ export default function WhoWeAre() {
                   </>
                 )}
               </p>
-            </div>
-
-            {/* Stats row */}
-            <div className="reveal grid grid-cols-3 gap-4 pt-4">
-              {stats.map((stat, i) => (
-                <div key={i} className="text-center border border-gold/10 p-4 bg-navy/20">
-                  <div className="font-display font-bold text-2xl md:text-3xl text-gold">{stat.value}</div>
-                  <div className="font-ui text-[9px] md:text-[10px] tracking-widest uppercase text-dim mt-1">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>

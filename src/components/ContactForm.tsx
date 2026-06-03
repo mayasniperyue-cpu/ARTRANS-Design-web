@@ -11,20 +11,11 @@ export default function ContactForm() {
     name: "",
     company: "",
     email: "",
-    interest: "",
     message: ""
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-
-  const interestOptions = [
-    t("contact.interest.p1"),
-    t("contact.interest.p2"),
-    t("contact.interest.p3"),
-    t("contact.interest.p4"),
-    t("contact.interest.p5")
-  ];
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -39,7 +30,6 @@ export default function ContactForm() {
       name: "",
       company: "",
       email: "",
-      interest: "",
       message: ""
     });
   };
@@ -74,7 +64,7 @@ export default function ContactForm() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left info panel */}
           <div>
-            <h2 className="reveal font-display font-black text-[clamp(2.2rem,5vw,5rem)] leading-[0.85] tracking-normal uppercase text-white mb-6">
+            <h2 className={`reveal font-display font-black text-[clamp(2.2rem,5vw,5rem)] tracking-normal uppercase text-white mb-6 ${language === "EN" ? "leading-[0.85]" : "leading-[1.12]"}`}>
               {language === "EN" ? (
                 <>
                   INITIATE
@@ -96,11 +86,11 @@ export default function ContactForm() {
             <div className="reveal flex flex-col gap-4">
               <div>
                 <span className="font-ui text-[10px] uppercase tracking-widest text-gold/50 block mb-1 font-semibold">
-                  {t("contact.general")}
+                  {t("contact.enquiry")}
                 </span>
                 <a
                   href="mailto:contact@artrans.hk"
-                  className="font-display text-xl text-white hover:text-gold transition-colors font-medium"
+                  className="font-body text-base text-dim hover:text-gold transition-colors font-normal"
                 >
                   contact@artrans.hk
                 </a>
@@ -109,7 +99,7 @@ export default function ContactForm() {
                 <span className="font-ui text-[10px] uppercase tracking-widest text-gold/50 block mb-1 font-semibold">
                   {t("contact.based")}
                 </span>
-                <span className="font-display text-xl text-white font-medium">
+                <span className="font-body text-base text-dim font-normal block leading-snug">
                   {t("contact.city")}
                 </span>
               </div>
@@ -122,96 +112,72 @@ export default function ContactForm() {
               <div className="py-12 flex flex-col items-center text-center">
                 <CheckCircle2 className="w-16 h-16 text-gold mb-6 animate-pulse" />
                 <h3 className="font-display font-semibold text-2xl uppercase text-white mb-3">
-                  {t("contact.form.success.title")}
+                  {t("contact.success.title")}
                 </h3>
                 <p className="font-body text-sm text-silver/65 leading-relaxed max-w-sm mb-8">
-                  {t("contact.form.success.desc")}
+                  {t("contact.success.desc")}
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}
                   className="font-ui text-xs tracking-widest uppercase border border-gold/40 text-gold px-6 py-3 hover:bg-gold/10 transition-colors cursor-pointer"
                 >
-                  {t("contact.form.success.btn")}
+                  {t("contact.success.btn")}
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Name */}
-                <div>
-                  <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
-                    {t("contact.form.name")}
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
-                    placeholder={t("contact.form.name.placeholder")}
-                  />
-                </div>
-
-                {/* Company & Email Row */}
+                {/* Name & Company Grid */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold font-semibold">
-                      {t("contact.form.company")}
+                    <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
+                      {t("contact.name")}
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={(e) => setForm({ ...form, name: e.target.value })}
+                      className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
+                      {t("contact.company")}
                     </label>
                     <input
                       type="text"
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
                       className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
-                      placeholder={t("contact.form.company.placeholder")}
-                    />
-                  </div>
-                  <div>
-                    <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
-                      {t("contact.form.email")}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      value={form.email}
-                      onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
-                      placeholder={t("contact.form.email.placeholder")}
                     />
                   </div>
                 </div>
 
-                {/* Area of Interest Selection */}
+                {/* Email Address */}
                 <div>
                   <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
-                    {t("contact.form.interest")}
+                    {t("contact.email")}
                   </label>
-                  <select
+                  <input
+                    type="email"
                     required
-                    value={form.interest}
-                    onChange={(e) => setForm({ ...form, interest: e.target.value })}
-                    className="w-full bg-[#111B2E] border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim cursor-pointer"
-                  >
-                    <option value="" disabled>{t("contact.form.interest.placeholder")}</option>
-                    {interestOptions.map((opt, i) => (
-                      <option key={i} value={opt} className="bg-navy text-white">
-                        {opt}
-                      </option>
-                    ))}
-                  </select>
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
+                  />
                 </div>
 
                 {/* Message */}
                 <div>
                   <label className="block font-ui text-[10px] uppercase tracking-widest text-gold/60 mb-2 font-semibold">
-                    {t("contact.form.message")}
+                    {t("contact.message")}
                   </label>
                   <textarea
                     required
-                    rows={4}
+                    rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="w-full bg-navy/60 border border-white/10 hover:border-gold/20 focus:border-gold/60 focus:outline-none p-4 text-silver text-sm transition-colors duration-300 font-body placeholder:text-dim"
-                    placeholder={t("contact.form.message.placeholder")}
                   />
                 </div>
 
@@ -224,12 +190,12 @@ export default function ContactForm() {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
-                      <span>{t("contact.form.btn.submitting")}</span>
+                      <span>{t("contact.submitting")}</span>
                     </>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      <span>{t("contact.form.btn.send")}</span>
+                      <span>{t("contact.submit")}</span>
                     </>
                   )}
                 </button>

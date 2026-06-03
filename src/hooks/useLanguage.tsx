@@ -1,5 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { NavElement, Advisor, Pillar, Partner, ConsortiumStep, Scenario } from "../types";
+import partner1Img from "../assets/images/regenerated_image_1780418658205.jpg";
+import partner2Img from "../assets/images/regenerated_image_1780418400987.png";
+import partner3Img from "../assets/images/regenerated_image_1780418402015.jpg";
+import partner4Img from "../assets/images/regenerated_image_1780418402908.jpg";
+import partner1Sub1Img from "../assets/images/regenerated_image_1780456872747.jpg";
+import partner1Sub2Img from "../assets/images/regenerated_image_1780420459174.jpg";
+import partner1Sub3Img from "../assets/images/regenerated_image_1780420460297.jpg";
+import partner5Img from "../assets/images/regenerated_image_1780462377858.avif";
 
 export type Language = "EN" | "TC";
 
@@ -60,7 +68,9 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
     "partners.subtitle": "Representative Strategic Partner Profiles",
     "partners.heading": "SPECIALIST PARTNERS ALIGNED TO PROJECT NEEDS.",
     "partners.tag": "Strategic Partner",
+    "partners.modal.role": "PARTNER ROLE",
     "partners.modal.tech": "Core Expertise",
+    "partners.modal.expertise": "PARTNERS EXPERTISE",
     "partners.modal.experience": "Representative Experience",
     "partners.btn.view": "View Profile",
 
@@ -79,8 +89,9 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
     "contact.heading": "INITIATE COLLABORATION.",
     "contact.desc": "Ready to structure a future-facing media project? Get in touch to discuss positioning, ecosystem requirements and partner curation opportunities.",
     "contact.enquiry": "General enquiries",
-    "contact.based": "Based in",
+    "contact.based": "ADDRESS",
     "contact.hk": "Hong Kong",
+    "contact.city": "21/F, Henley Building, 5 Queen’s Road Central, Central, Hong Kong",
     "contact.success.title": "Enquiry Submitted",
     "contact.success.desc": "Thank you for starting the conversation. We will review your enquiry and respond shortly.",
     "contact.success.btn": "Send another enquiry",
@@ -102,10 +113,10 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
   },
   TC: {
     // Header & Hero
-    "header.logo.sub": "媒體合作夥伴",
+    "header.logo.sub": "Media Partners",
     "header.contact": "聯絡我們",
     "hero.transformation": "23°26′ 轉型變革願景",
-    "hero.partners": "媒體合作夥伴",
+    "hero.partners": "MEDIA PARTNERS",
     "hero.line": "媒體卓越協作，結構化呈現。",
     "hero.btn.discover": "探索我們的模式",
     "hero.btn.initiate": "開啟項目合作",
@@ -116,7 +127,7 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
     "who.subtitle": "關於我們",
     "who.heading": "國際媒體戰略合作平台",
     "who.italic": "全面構建以項目為核心的跨界合作，涵蓋優質內容、影棚製作、媒體科技、數字平台和商業化變現。",
-    "who.box1": "ARTRANS 媒體合夥人平台是一個國際性的媒體戰略合作平台。我們致力於圍繞優質內容、影棚製作、媒體科技、數字平台以及商業化運營，構建起以項目為核心的、高度專業的跨界協作體系。",
+    "who.box1": "ARTRANS Media Partners 平台是一個國際性的媒體戰略合作平台。我們致力於圍繞優質內容、影棚製作、媒體科技、數字平台以及商業化運營，構建起以項目為核心的、高度專業的跨界協作體系。",
     "who.box2": "ARTRANS 靈活匯聚市場中最契合的戰略、創意、技術和運營合作夥伴，幫助客戶構建最符合項目實質目標與演進路線的合夥架構，從容把握面向未來的媒體機遇。",
     "who.stats.pillars": "核心專業板塊",
     "who.stats.partners": "戰略合作夥伴",
@@ -142,7 +153,9 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
     "partners.subtitle": "核心戰略合作夥伴代表",
     "partners.heading": "攜手頂尖專才，精準契合項目需求。",
     "partners.tag": "戰略夥伴",
+    "partners.modal.role": "PARTNER ROLE",
     "partners.modal.tech": "核心專長技術",
+    "partners.modal.expertise": "PARTNERS EXPERTISE",
     "partners.modal.experience": "代表性合作經歷與亮點",
     "partners.btn.view": "觀看簡介",
 
@@ -161,8 +174,9 @@ const UI_TRANSLATIONS: Record<Language, Record<string, string>> = {
     "contact.heading": "開啟全新協作願景。",
     "contact.desc": "準備好啟動面向未來的媒體項目了？歡迎立即與我們的團隊取得聯繫，深入探討定位、資源對接以及項目合夥的無限可能。",
     "contact.enquiry": "業務與合作諮詢",
-    "contact.based": "總部設立所在地",
+    "contact.based": "ADDRESS",
     "contact.hk": "香港特別行政區",
+    "contact.city": "香港皇后大道中5號衡怡大廈21樓",
     "contact.success.title": "諮詢已成功提交",
     "contact.success.desc": "非常感謝您開啟本次對話。我們的團隊正在認真評估您的需求，並將在最短時間內與您取得聯繫。",
     "contact.success.btn": "提交另一個諮詢",
@@ -245,11 +259,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "timeaxis",
         name: "TIMEAXIS DIGITAL IMAGING TECHNOLOGY",
         role: "Virtual Production / Advanced Post-Production",
-        thumb: "https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=800&auto=format&fit=crop",
+        thumb: partner1Img,
         images: [
-          "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+          partner1Sub1Img,
+          partner1Sub2Img,
+          partner1Sub3Img
         ],
         desc: "A specialist partner supporting virtual production studio solutions, LED stage integration, digital asset creation, cinematic VFX, AIGC-assisted visual production and advanced post-production workflows.",
         expertise: [
@@ -274,11 +288,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "malanshan",
         name: "MALANSHAN AUDIO-VIDEO LABORATORY",
         role: "AI Media & Audio-Video Innovation Lab",
-        thumb: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+        thumb: partner2Img,
         images: [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/regenerated_image_1780419660927.jpg",
+          "src/assets/images/regenerated_image_1780419376096.png",
+          "src/assets/images/regenerated_image_1780419662898.jpg"
         ],
         desc: "An audio-video R&D and innovation partner supporting AI media production, audio-video infrastructure, content localization, restoration, immersive media and full-chain audio-video technologies.",
         expertise: [
@@ -300,41 +314,46 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
       },
       {
         id: "ndt",
-        name: "NDT GROUP / NEW DIGITAL TECHNOLOGY HOLDINGS LTD.",
-        role: "Studio Technology & Systems Integrator",
-        thumb: "/Main-Image01.png",
+        name: "DADA + ISM STUDIO",
+        role: "Event Creative & Experience Strategy Partner",
+        thumb: partner3Img,
         images: [
-          "/Main-Image01.png",
-          "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/003-Interior-Pages01.jpg",
+          "src/assets/images/003-Interior-Pages02.jpg",
+          "src/assets/images/003-Interior-Pages03.jpg"
         ],
-        desc: "A professional studio technology and broadcast systems integration partner supporting studio planning, AV system integration, broadcast workflow, master control, transmission, distribution and technical operation infrastructure.",
+        desc: "A cross-border event creative and experience strategy partner connecting selected Chinese creative capabilities with cultural, entertainment, sports, media and brand opportunities across Saudi Arabia and the wider Middle East.",
         expertise: [
-          "Studio AV systems",
-          "Broadcast workflow",
-          "Master control",
-          "Transmission & distribution",
-          "OB vans",
-          "4K-IP infrastructure",
-          "Core equipment integration"
+          "Event creative strategy",
+          "Concept development",
+          "Creative direction",
+          "Stadium ceremonies",
+          "Brand launches",
+          "Immersive cultural experiences",
+          "Multimedia storytelling",
+          "Sports & esports entertainment",
+          "Sponsorship activation",
+          "Partner curation"
         ],
         highlights: [
-          "China Media Group / CCTV New-Site E14, E15, E17 Studio Cluster — audio system upgrade.",
-          "CCTV / 800㎡ 4K Studio — 4K studio audio system integration and upgrade.",
-          "Zhejiang Radio & TV / 32-Channel 4K-IP OB Van — Sony & Evertz collaboration.",
-          "Tianjin TV / 13th National Games IBC Signal Dispatch Center.",
-          "Zhejiang Radio & TV / International Film & TV Center IP Master Control Project."
+          "Spanish Super Cup 2025, Jeddah — stadium ceremony and entertainment delivery support.",
+          "AFC Asian Cup Saudi Arabia 2027 — final-round shortlisted opening and closing ceremony proposal.",
+          "Prince Badr Immersive Museum Experience — approved immersive cultural experience concept.",
+          "CEER Automotive Launch 2026 — shortlisted brand launch concept and content design.",
+          "Esports World Cup 2026 Opening Ceremony — final-round shortlisted ceremony proposal.",
+          "WTA Riyadh 2025 × ERKE — sponsorship secured and activation strategy support.",
+          "Core Creative Network — selected partners across brand experience, ceremonies, esports, immersive media, AI content and sports marketing."
         ]
       },
       {
         id: "dayang",
         name: "DAYANG TECHNOLOGY",
         role: "Media Asset & Broadcast Workflow Systems Partner",
-        thumb: "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
+        thumb: partner4Img,
         images: [
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/004-Interior-Pages01.avif",
+          "src/assets/images/004-Interior-Pages02.jpg",
+          "src/assets/images/004-Interior-Pages03.jpg"
         ],
         desc: "A media technology and broadcast workflow systems partner supporting media asset management, integrated production, ultra-HD editing, broadcast playout and multi-platform distribution.",
         expertise: [
@@ -357,11 +376,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "sobey",
         name: "SOBEY DIGITAL TECHNOLOGY",
         role: "Media Cloud & Converged Workflow Partner",
-        thumb: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image05.avif",
         images: [
-          "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1567593810070-7a3d471af022?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/005-Interior-Pages01.jpg",
+          "src/assets/images/005-Interior-Pages02.jpg",
+          "src/assets/images/005-Interior-Pages03.jpg"
         ],
         desc: "A media technology and integrated broadcast workflow partner supporting media cloud, converged newsroom, content management, ultra-HD production, multi-platform publishing and professional media system integration.",
         expertise: [
@@ -385,11 +404,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "songguo",
         name: "SONGGUO DIGITAL CULTURE",
         role: "Short Drama Content & Commercialization Partner",
-        thumb: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image06.avif",
         images: [
-          "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/006-Interior-Pages01.avif",
+          "src/assets/images/006-Interior-Pages02.jpg",
+          "src/assets/images/006-Interior-Pages03.avif"
         ],
         desc: "A short drama content and commercialization partner with a national production and distribution network. Supports the full short drama value chain from IP development to commercial monetization.",
         expertise: [
@@ -413,11 +432,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "utour",
         name: "UTOUR DIGITAL CULTURE",
         role: "Immersive Experience & Digital Culture Partner",
-        thumb: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image07.avif",
         images: [
-          "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1561736778-92e52a7769ef?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/007-Interior-Pages01.jpg",
+          "src/assets/images/007-Interior-Pages02.jpg",
+          "src/assets/images/007-Interior-Pages03.jpg"
         ],
         desc: "An immersive experience and spatial computing partner supporting LBE experiences, XR interaction, virtual production, multimedia content, digital heritage and turnkey immersive solutions.",
         expertise: [
@@ -441,11 +460,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "huanxi",
         name: "HUANXI MEDIA GROUP",
         role: "Premium Film, IP & AI Content Partner",
-        thumb: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image08.avif",
         images: [
-          "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/008-Interior-Pages01.avif",
+          "src/assets/images/008-Interior-Pages02.jpg",
+          "src/assets/images/008-Interior-Pages03.jpg"
         ],
         desc: "A premium film and IP content partner supporting film investment, production, director-led content development, theatrical release, online distribution, curated streaming and AI-powered entertainment content.",
         expertise: [
@@ -553,11 +572,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "timeaxis",
         name: "時空軸數字影像技術 (TIMEAXIS)",
         role: "虛擬製作 / 高級特效與後期流程",
-        thumb: "https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=800&auto=format&fit=crop",
+        thumb: partner1Img,
         images: [
-          "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+          partner1Sub1Img,
+          partner1Sub2Img,
+          partner1Sub3Img
         ],
         desc: "戰略性技術合夥夥伴，為大型項目配備一整套虛擬舞台影視方案、高級 LED 現場拍攝、高品質數字虛擬資產研發、大銀幕級特效（VFX）及 AI 輔助影像工作流。",
         expertise: [
@@ -582,11 +601,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "malanshan",
         name: "馬欄山視頻超高清實驗室 (MALANSHAN LAB)",
         role: "AI 智能影音與超高清技術創新機構",
-        thumb: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+        thumb: partner2Img,
         images: [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
+         "src/assets/images/regenerated_image_1780419660927.jpg",
+          "src/assets/images/regenerated_image_1780419376096.png",
+          "src/assets/images/regenerated_image_1780419662898.jpg"
         ],
         desc: "頂尖研發科研實體，專精於前沿音視頻科學、AI 視頻自動化翻譯與譯配、字幕精準同步、經典老片超清修複、高交互空間媒體以及次世代聲效技術的開發。",
         expertise: [
@@ -603,46 +622,51 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
           "由湖南省、長沙市兩級政府強力主導建置的省級前沿科技新秀重組實驗室。",
           "在 CEIC 2025 全國科技盛會中重磅發布 13 項具有世界領先水平的超高清智能製作裝備與系統。",
           "在微短劇全球化浪潮中，依託其自研 AI 翻譯，為大批版權方打通英語、泰語、西語等高水準本地化譯製。",
-          "將先進的 3D 高保真與全維度虛擬交互場景導入智慧文旅和混合沉浸式博物館中。"
+          "將先進 of 3D 高保真與全維度虛擬交互場景導入智慧文旅和混合沉浸式博物館中。"
         ]
       },
       {
         id: "ndt",
-        name: "新奧特數字視頻技術有限公司 (NDT)",
-        role: "廣電級播控與大型演播系統集成商",
-        thumb: "/Main-Image01.png",
+        name: "達達ISM",
+        role: "活動創意與體驗策略夥伴",
+        thumb: partner3Img,
         images: [
-          "/Main-Image01.png",
-          "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/003-Interior-Pages01.jpg",
+          "src/assets/images/003-Interior-Pages02.jpg",
+          "src/assets/images/003-Interior-Pages03.jpg"
         ],
-        desc: "行業頂尖的廣電級演播室建設商、特大型音視頻傳輸與分發平台提供商，擁有無可比擬的全國性及海外重點廣電台直播信號保障經驗。",
+        desc: "一家跨境活動創意和體驗策略合作夥伴，將精選的中國創意能力與沙烏地阿拉伯及更廣泛的中東地區的文化、娛樂、體育、媒體和品牌機會聯繫起來。",
         expertise: [
-          "廣電級超大演播室全系統",
-          "電視網絡全融合播出流",
-          "多機位主控與分發網",
-          "長途超高清信號無損分發",
-          "重型特種 IP 化轉播車",
-          "4K/8K-IP 大陸骨幹網架構",
-          "國際一線名牌設備定製與代建"
+          "活動創意策略",
+          "概念發展",
+          "創意指導",
+          "體育場館儀式",
+          "品牌發布",
+          "沉浸式文化體驗",
+          "多媒體敘事",
+          "運動及電競娛樂",
+          "贊助活化",
+          "合作夥伴甄選"
         ],
         highlights: [
-          "主導中央廣播電視總台 (CCTV) 總部大樓中，最為核心的 E14、E15、E17 等演播群的智能化音視頻改造項目。",
-          "定制設計並集成了央視頂級 800 平米 4K 超高清全融演播大廳音視頻與播控系統。",
-          "攜手索尼 (Sony) 和 Evertz，成功為浙江廣播電視集團交付了國內信號通道數最龐大的 32通道 4K-IP 重型全能轉播車。",
-          "作為獨家核心技術供應商之一，成功實施了天津全運會國際廣播中心 (IBC) 的信號集成調度。",
-          "承建浙江國際影視文化中心 IP 化全功能多域主控機房項目。"
+          "2025年西班牙超級盃（吉達）－體育場開幕式及娛樂活動支援。",
+          "2027年亞足聯亞洲盃（沙烏地阿拉伯）－開幕式和閉幕式方案入圍決賽。",
+          "巴德爾王子沉浸式博物館體驗－沉浸式文化體驗方案獲準。",
+          "2026年CEER汽車發表會－品牌發布方案及內容設計入圍決賽。",
+          "2026年電競世界盃開幕式－開幕式方案入圍決賽。",
+          "2025年WTA利雅德站×ERKE－贊助落實及推廣策略支持。",
+          "核心創意網絡－在品牌體驗、開幕式、電競、沉浸式媒體、人工智慧內容及運動行銷等領域甄選合作夥伴。"
         ]
       },
       {
         id: "dayang",
         name: "中科大洋科技 (DAYANG)",
         role: "國家級非線性編輯與智能化媒資庫系統商",
-        thumb: "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
+        thumb: partner4Img,
         images: [
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1598743400863-0201a9d33e3f?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/004-Interior-Pages01.avif",
+          "src/assets/images/004-Interior-Pages02.jpg",
+          "src/assets/images/004-Interior-Pages03.jpg"
         ],
         desc: "專注於融合媒體核心系統研發，特別是在大容量智能媒體資源管理庫（MAM）、高端非線性編輯基站、8K 信號全自動化播控平台等方向居於行業制高點。",
         expertise: [
@@ -665,11 +689,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "sobey",
         name: "索貝數字科技 (SOBEY)",
         role: "泛媒體雲與融合採編室全生態運營商",
-        thumb: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+        thumb: partner5Img,
         images: [
-          "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1567593810070-7a3d471af022?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/005-Interior-Pages01.jpg",
+          "src/assets/images/005-Interior-Pages02.jpg",
+          "src/assets/images/005-Interior-Pages03.jpg"
         ],
         desc: "領先的專業級媒體雲平台提供商，開創了融合採編室（Converged Newsroom）生態，使跨區域、跨團隊的多端雲端在線採編發一體化成爲可能。",
         expertise: [
@@ -693,11 +717,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "songguo",
         name: "松果數字文化 (SONGGUO C_C)",
         role: "微短劇製作、發行與全網商業化合夥人",
-        thumb: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image06.avif",
         images: [
-          "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/006-Interior-Pages01.avif",
+          "src/assets/images/006-Interior-Pages02.jpg",
+          "src/assets/images/006-Interior-Pages03.avif"
         ],
         desc: "微短劇垂直業態領跑者，擁有領先行業的標準化拍攝基地與強大的流量運營和推廣投放引擎，為客戶打通從劇本活化、批量攝製到平台分發和裂變變現。",
         expertise: [
@@ -721,11 +745,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "utour",
         name: "眾信數字文化 (UTOUR)",
         role: "線下特大型沉浸展演與大型空間計算開拓者",
-        thumb: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image07.avif",
         images: [
-          "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1561736778-92e52a7769ef?q=80&w=800&auto=format&fit=crop"
+          "src/assets/images/007-Interior-Pages01.jpg",
+          "src/assets/images/007-Interior-Pages02.jpg",
+          "src/assets/images/007-Interior-Pages03.jpg"
         ],
         desc: "專精於 5D 虛擬視覺交互、高擬真線下大空間虛擬現實（LBE）、AR/VR 文化體驗研發以及利用虛幻引擎5（UE5）構建新穎虛擬數字雙生資產的頂尖團隊。",
         expertise: [
@@ -749,11 +773,11 @@ const DYNAMIC_TRANSLATIONS: Record<Language, {
         id: "huanxi",
         name: "歡喜傳媒集團 (HUANXI MEDIA)",
         role: "華語電影矩陣、頂級導演 IP 與歡喜首映流媒體平台",
-        thumb: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
+        thumb: "src/assets/images/Main-Image08.avif",
         images: [
-          "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=800&auto=format&fit=crop"
+         "src/assets/images/008-Interior-Pages01.avif",
+         "src/assets/images/008-Interior-Pages02.jpg",
+         "src/assets/images/008-Interior-Pages03.jpg"
         ],
         desc: "中國最為著名的華語精品院線電影、強大名導聯盟、優質長影劇網絡以及高質量自營流媒體「歡喜首映」應用平台的擁有者與合夥運營機構。",
         expertise: [

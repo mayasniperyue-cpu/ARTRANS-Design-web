@@ -26,7 +26,7 @@ export default function CollaborationScenarios() {
 
         {/* Section Heading */}
         <div className="reveal mb-14">
-          <h2 className="font-display font-black text-[clamp(2.2rem,5vw,5rem)] leading-[0.85] tracking-normal uppercase text-white mb-4">
+          <h2 className={`font-display font-black text-[clamp(2.2rem,5vw,5rem)] tracking-normal uppercase text-white mb-4 ${language === "EN" ? "leading-[0.85]" : "leading-[1.12]"}`}>
             {language === "EN" ? (
               <>
                 STRUCTURING
